@@ -26,10 +26,10 @@ namespace ProyectoTaller2
                 btnRealizarVenta.Enabled = true;
             }
 
-            if(dataGridVenta.RowCount < 2)
+            /*if(dataGridVenta.RowCount < 2)
             {
                 dataGridVenta.Visible = false;
-            }
+            }*/
 
 
         }
@@ -167,7 +167,7 @@ namespace ProyectoTaller2
 
             }
 
-            this.Close();
+            //this.Close();
         }
 
         private void FormVenta_Load(object sender, EventArgs e)
@@ -177,6 +177,8 @@ namespace ProyectoTaller2
             {
                 formularioPrincipal.ProductoAgregadoAlCarrito += FormularioPrincipal_ProductoAgregadoAlCarrito;
             }
+
+            txtFecha.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
         private void FormularioPrincipal_ProductoAgregadoAlCarrito(object sender, ProductoEventArgs e)
@@ -201,6 +203,11 @@ namespace ProyectoTaller2
             dataGridVenta.Columns.Add("aqwec","qasecd");
 
             dataGridVenta.Rows.Add(producto);
+        }
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
         }
     }
 }
