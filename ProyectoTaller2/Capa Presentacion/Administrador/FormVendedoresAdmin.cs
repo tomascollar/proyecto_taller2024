@@ -94,5 +94,15 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
             dataGridVendedores.Columns[6].HeaderText = "Tipo de Usuario";
 
         }
+
+        ErrorProvider errorP = new ErrorProvider();
+        private void txtNombreVendedor_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            bool valida = Validar.soloLetras(e);
+            if (!valida)
+                errorP.SetError(txtNombreVendedor, "Solo letras");
+            else
+                errorP.Clear();
+        }
     }
 }

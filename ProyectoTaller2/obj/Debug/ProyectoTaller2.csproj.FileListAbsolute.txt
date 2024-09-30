@@ -383,3 +383,5 @@ C:\Users\tomas\OneDrive\Escritorio\proyecto_taller2024\ProyectoTaller2\obj\Debug
 C:\Users\tomas\OneDrive\Escritorio\proyecto_taller2024\ProyectoTaller2\obj\Debug\ProyectoTaller2.csproj.CopyComplete
 C:\Users\tomas\OneDrive\Escritorio\proyecto_taller2024\ProyectoTaller2\obj\Debug\ProyectoTaller2.exe
 C:\Users\tomas\OneDrive\Escritorio\proyecto_taller2024\ProyectoTaller2\obj\Debug\ProyectoTaller2.pdb
+C:\Users\tomas\OneDrive\Escritorio\proyecto_taller2024\ProyectoTaller2\obj\Debug\ProyectoTaller2.Capa_Presentacion.Vendedor.Form_ListaProductos.resources
+C:\Users\tomas\OneDrive\Escritorio\proyecto_taller2024\ProyectoTaller2\obj\Debug\ProyectoTaller2.Capa_Presentacion.Vendedor.Form_ListaClientes.resources

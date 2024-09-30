@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProyectoTaller2.Capa_Presentacion.Vendedor;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -208,6 +209,28 @@ namespace ProyectoTaller2
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
 
+        }
+
+        private void btnBuscarProducto_Click(object sender, EventArgs e)
+        {
+            Form_ListaProductos form_ListaProductos = new Form_ListaProductos();
+            form_ListaProductos.ShowDialog();
+        }
+
+        private void btnClienteVenta_Click(object sender, EventArgs e)
+        {
+            Form_ListaClientes form_ListaClientes = new Form_ListaClientes();
+            form_ListaClientes.ShowDialog();
+        }
+
+        ErrorProvider errorP = new ErrorProvider();
+        private void txtCodProd_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            bool valida = Validar.soloNumeros(e);
+            if (!valida)
+                errorP.SetError(txtCodProd, "Solo numeros");
+            else
+                errorP.Clear();
         }
     }
 }

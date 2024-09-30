@@ -32,7 +32,24 @@ namespace ProyectoTaller2.Capa_Presentacion.SuperAdmin
             txtTelefono.Text = telefono;
             txtUsuario.Text = usuario;
             txtPass.Text = contraseña;
-            comboBoxTipo.Text = tipo_user;
+           //comboBoxTipo.Text = tipo_user;
+
+           // comboBoxTipo.SelectedIndex = 1;
+
+            if(tipo_user == "1")
+            {
+                comboBoxTipo.SelectedIndex = 2;
+            }
+            else if (tipo_user == "2")
+            {
+                comboBoxTipo.SelectedIndex = 1;
+            }
+            else
+            {
+                comboBoxTipo.SelectedIndex = 0;
+            }
+            
+
         }
 
 
@@ -196,7 +213,7 @@ namespace ProyectoTaller2.Capa_Presentacion.SuperAdmin
 
         private void Editar_Usuario_Load(object sender, EventArgs e)
         {
-            LlenarCombo();
+            //LlenarCombo();
         }
 
         private void LlenarCombo()

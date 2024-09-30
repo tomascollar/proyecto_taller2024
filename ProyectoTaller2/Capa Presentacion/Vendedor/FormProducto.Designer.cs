@@ -74,6 +74,7 @@
             this.btnAgregarCarrito.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAgregarCarrito.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAgregarCarrito.UseVisualStyleBackColor = false;
+            this.btnAgregarCarrito.Visible = false;
             this.btnAgregarCarrito.Click += new System.EventHandler(this.btnAgregarCarrito_Click);
             // 
             // btnBuscarProd

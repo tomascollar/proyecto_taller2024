@@ -28,16 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnRealizarVenta = new System.Windows.Forms.Button();
-            this.btnCancelar = new FontAwesome.Sharp.IconButton();
             this.groupBoxVenta = new System.Windows.Forms.GroupBox();
             this.txtFecha = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxCliente = new System.Windows.Forms.GroupBox();
-            this.btnClienteVenta = new FontAwesome.Sharp.IconButton();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -47,14 +45,12 @@
             this.txtStockProducto = new System.Windows.Forms.TextBox();
             this.txtPrecioProducto = new System.Windows.Forms.TextBox();
             this.txtProducto = new System.Windows.Forms.TextBox();
-            this.btnBuscarProducto = new FontAwesome.Sharp.IconButton();
             this.txtCodProd = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnAgregarProductoVenta = new FontAwesome.Sharp.IconButton();
             this.dataGridVenta = new System.Windows.Forms.DataGridView();
             this.ColumnaIdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnaProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +60,10 @@
             this.btnEliminar = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label9 = new System.Windows.Forms.Label();
             this.txtTotalAPagar = new System.Windows.Forms.TextBox();
+            this.btnAgregarProductoVenta = new FontAwesome.Sharp.IconButton();
+            this.btnBuscarProducto = new FontAwesome.Sharp.IconButton();
+            this.btnClienteVenta = new FontAwesome.Sharp.IconButton();
+            this.btnCancelar = new FontAwesome.Sharp.IconButton();
             this.groupBoxVenta.SuspendLayout();
             this.groupBoxCliente.SuspendLayout();
             this.groupBoxProductos.SuspendLayout();
@@ -84,28 +84,6 @@
             this.btnRealizarVenta.Text = "Finalizar Venta";
             this.btnRealizarVenta.UseVisualStyleBackColor = false;
             this.btnRealizarVenta.Click += new System.EventHandler(this.btnRealizarVenta_Click);
-            // 
-            // btnCancelar
-            // 
-            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancelar.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
-            this.btnCancelar.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
-            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.Cancel;
-            this.btnCancelar.IconColor = System.Drawing.Color.Black;
-            this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnCancelar.IconSize = 30;
-            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCancelar.Location = new System.Drawing.Point(679, 408);
-            this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(111, 44);
-            this.btnCancelar.TabIndex = 3;
-            this.btnCancelar.Text = "Cancelar";
-            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnCancelar.UseVisualStyleBackColor = false;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // groupBoxVenta
             // 
@@ -155,20 +133,6 @@
             this.groupBoxCliente.TabIndex = 7;
             this.groupBoxCliente.TabStop = false;
             this.groupBoxCliente.Text = "Informacion Cliente";
-            // 
-            // btnClienteVenta
-            // 
-            this.btnClienteVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClienteVenta.ForeColor = System.Drawing.Color.White;
-            this.btnClienteVenta.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnClienteVenta.IconColor = System.Drawing.Color.White;
-            this.btnClienteVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnClienteVenta.IconSize = 20;
-            this.btnClienteVenta.Location = new System.Drawing.Point(159, 44);
-            this.btnClienteVenta.Name = "btnClienteVenta";
-            this.btnClienteVenta.Size = new System.Drawing.Size(24, 23);
-            this.btnClienteVenta.TabIndex = 4;
-            this.btnClienteVenta.UseVisualStyleBackColor = true;
             // 
             // textBox2
             // 
@@ -264,23 +228,11 @@
             // 
             // txtProducto
             // 
-            this.txtProducto.Location = new System.Drawing.Point(166, 52);
+            this.txtProducto.Location = new System.Drawing.Point(178, 51);
             this.txtProducto.Name = "txtProducto";
+            this.txtProducto.ReadOnly = true;
             this.txtProducto.Size = new System.Drawing.Size(167, 25);
             this.txtProducto.TabIndex = 7;
-            // 
-            // btnBuscarProducto
-            // 
-            this.btnBuscarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarProducto.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
-            this.btnBuscarProducto.IconColor = System.Drawing.Color.White;
-            this.btnBuscarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnBuscarProducto.IconSize = 20;
-            this.btnBuscarProducto.Location = new System.Drawing.Point(126, 54);
-            this.btnBuscarProducto.Name = "btnBuscarProducto";
-            this.btnBuscarProducto.Size = new System.Drawing.Size(23, 23);
-            this.btnBuscarProducto.TabIndex = 6;
-            this.btnBuscarProducto.UseVisualStyleBackColor = true;
             // 
             // txtCodProd
             // 
@@ -288,6 +240,7 @@
             this.txtCodProd.Name = "txtCodProd";
             this.txtCodProd.Size = new System.Drawing.Size(110, 25);
             this.txtCodProd.TabIndex = 5;
+            this.txtCodProd.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCodProd_KeyPress);
             // 
             // label8
             // 
@@ -323,7 +276,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(162, 30);
+            this.label5.Location = new System.Drawing.Point(174, 30);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 19);
             this.label5.TabIndex = 1;
@@ -339,37 +292,19 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Cod. Producto:";
             // 
-            // btnAgregarProductoVenta
-            // 
-            this.btnAgregarProductoVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
-            this.btnAgregarProductoVenta.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregarProductoVenta.ForeColor = System.Drawing.Color.White;
-            this.btnAgregarProductoVenta.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
-            this.btnAgregarProductoVenta.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.btnAgregarProductoVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAgregarProductoVenta.IconSize = 35;
-            this.btnAgregarProductoVenta.Location = new System.Drawing.Point(715, 119);
-            this.btnAgregarProductoVenta.Name = "btnAgregarProductoVenta";
-            this.btnAgregarProductoVenta.Size = new System.Drawing.Size(84, 68);
-            this.btnAgregarProductoVenta.TabIndex = 9;
-            this.btnAgregarProductoVenta.Text = "Agregar";
-            this.btnAgregarProductoVenta.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnAgregarProductoVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.btnAgregarProductoVenta.UseVisualStyleBackColor = false;
-            // 
             // dataGridVenta
             // 
             this.dataGridVenta.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridVenta.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridVenta.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridVenta.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridVenta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridVenta.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ColumnaIdProducto,
@@ -378,25 +313,26 @@
             this.ColumnaCantidad,
             this.ColumnaSubtotal,
             this.btnEliminar});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridVenta.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridVenta.DefaultCellStyle = dataGridViewCellStyle5;
             this.dataGridVenta.GridColor = System.Drawing.Color.DarkBlue;
             this.dataGridVenta.Location = new System.Drawing.Point(9, 200);
             this.dataGridVenta.Name = "dataGridVenta";
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridVenta.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridVenta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridVenta.Size = new System.Drawing.Size(653, 252);
             this.dataGridVenta.TabIndex = 10;
             // 
@@ -445,9 +381,79 @@
             // 
             this.txtTotalAPagar.Location = new System.Drawing.Point(679, 244);
             this.txtTotalAPagar.Name = "txtTotalAPagar";
+            this.txtTotalAPagar.ReadOnly = true;
             this.txtTotalAPagar.Size = new System.Drawing.Size(100, 20);
             this.txtTotalAPagar.TabIndex = 12;
             this.txtTotalAPagar.Text = "0";
+            // 
+            // btnAgregarProductoVenta
+            // 
+            this.btnAgregarProductoVenta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(74)))));
+            this.btnAgregarProductoVenta.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregarProductoVenta.ForeColor = System.Drawing.Color.White;
+            this.btnAgregarProductoVenta.IconChar = FontAwesome.Sharp.IconChar.CartPlus;
+            this.btnAgregarProductoVenta.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.btnAgregarProductoVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAgregarProductoVenta.IconSize = 35;
+            this.btnAgregarProductoVenta.Location = new System.Drawing.Point(715, 119);
+            this.btnAgregarProductoVenta.Name = "btnAgregarProductoVenta";
+            this.btnAgregarProductoVenta.Size = new System.Drawing.Size(84, 68);
+            this.btnAgregarProductoVenta.TabIndex = 9;
+            this.btnAgregarProductoVenta.Text = "Agregar";
+            this.btnAgregarProductoVenta.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnAgregarProductoVenta.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.btnAgregarProductoVenta.UseVisualStyleBackColor = false;
+            // 
+            // btnBuscarProducto
+            // 
+            this.btnBuscarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarProducto.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnBuscarProducto.IconColor = System.Drawing.Color.White;
+            this.btnBuscarProducto.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnBuscarProducto.IconSize = 20;
+            this.btnBuscarProducto.Location = new System.Drawing.Point(140, 54);
+            this.btnBuscarProducto.Name = "btnBuscarProducto";
+            this.btnBuscarProducto.Size = new System.Drawing.Size(23, 23);
+            this.btnBuscarProducto.TabIndex = 6;
+            this.btnBuscarProducto.UseVisualStyleBackColor = true;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
+            // 
+            // btnClienteVenta
+            // 
+            this.btnClienteVenta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClienteVenta.ForeColor = System.Drawing.Color.White;
+            this.btnClienteVenta.IconChar = FontAwesome.Sharp.IconChar.MagnifyingGlass;
+            this.btnClienteVenta.IconColor = System.Drawing.Color.White;
+            this.btnClienteVenta.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnClienteVenta.IconSize = 20;
+            this.btnClienteVenta.Location = new System.Drawing.Point(159, 44);
+            this.btnClienteVenta.Name = "btnClienteVenta";
+            this.btnClienteVenta.Size = new System.Drawing.Size(24, 23);
+            this.btnClienteVenta.TabIndex = 4;
+            this.btnClienteVenta.UseVisualStyleBackColor = true;
+            this.btnClienteVenta.Click += new System.EventHandler(this.btnClienteVenta_Click);
+            // 
+            // btnCancelar
+            // 
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Flip = FontAwesome.Sharp.FlipOrientation.Horizontal;
+            this.btnCancelar.Font = new System.Drawing.Font("Gadugi", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.Black;
+            this.btnCancelar.IconChar = FontAwesome.Sharp.IconChar.Cancel;
+            this.btnCancelar.IconColor = System.Drawing.Color.Black;
+            this.btnCancelar.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnCancelar.IconSize = 30;
+            this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnCancelar.Location = new System.Drawing.Point(679, 408);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(111, 44);
+            this.btnCancelar.TabIndex = 3;
+            this.btnCancelar.Text = "Cancelar";
+            this.btnCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnCancelar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // FormVenta
             // 

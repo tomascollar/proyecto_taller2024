@@ -29,6 +29,7 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
             {
                 btnEliminarProd.Enabled = true;
                 btnEditarProd.Enabled = true;
+                //btnAgregarProd.Enabled = false;
 
             }
             else
@@ -88,6 +89,7 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
                     comboCategoriaProd.SelectedIndex = -1;
 
                     dataGridProductos.Refresh();
+
                     /*
                     var nombre = txtNombreProd.Text;
                     var marca = txtMarcaProd.Text;
@@ -142,7 +144,9 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
             if (msg == DialogResult.Yes)
             {
 
-                dataGridProductos.Rows.RemoveAt(filaSeleccionada);
+
+                dataGridProductos.Rows[filaSeleccionada].DefaultCellStyle.BackColor = Color.Red;
+                /*dataGridProductos.Rows.RemoveAt(filaSeleccionada);
 
 
                 txtNombreProd.Clear();
@@ -151,7 +155,7 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
                 txtDescripProd.Clear();
                 txtPrecioProd.Clear();
                 comboCategoriaProd.SelectedItem = null;
-
+                */
             }
         }
 
@@ -180,12 +184,12 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
                     var precio = Convert.ToInt32(txtPrecioProd.Text);
                     var categoria = comboCategoriaProd.SelectedItem;
 
-                    dataGridProductos[0, filaSeleccionada].Value = nombre;
-                    dataGridProductos[1, filaSeleccionada].Value = marca;
-                    dataGridProductos[2, filaSeleccionada].Value = stock;
-                    dataGridProductos[3, filaSeleccionada].Value = precio;
-                    dataGridProductos[4, filaSeleccionada].Value = descrip;
-                    dataGridProductos[5, filaSeleccionada].Value = categoria;
+                    dataGridProductos[1, filaSeleccionada].Value = nombre;
+                    dataGridProductos[2, filaSeleccionada].Value = marca;
+                    dataGridProductos[3, filaSeleccionada].Value = stock;
+                    dataGridProductos[4, filaSeleccionada].Value = precio;
+                    dataGridProductos[5, filaSeleccionada].Value = descrip;
+                    dataGridProductos[6, filaSeleccionada].Value = categoria;
  
 
                     
@@ -204,18 +208,20 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
 
         private void dataGridProductos_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtNombreProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[0].Value.ToString();
-            comboMarca.Text = dataGridProductos.Rows[e.RowIndex].Cells[1].Value.ToString();
-            txtStockProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[2].Value.ToString();
-            txtPrecioProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[3].Value.ToString();
-            txtDescripProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[4].Value.ToString();
-            comboCategoriaProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            txtNombreProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[1].Value.ToString();
+            comboMarca.Text = dataGridProductos.Rows[e.RowIndex].Cells[2].Value.ToString();
+            txtStockProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[3].Value.ToString();
+            txtPrecioProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[4].Value.ToString();
+            txtDescripProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[5].Value.ToString();
+            comboCategoriaProd.Text = dataGridProductos.Rows[e.RowIndex].Cells[6].Value.ToString();
         }
 
         private void FormProductosAdmin_Load(object sender, EventArgs e)
         {
             LlenarCombos();
             cargarProductos();
+
+          
         }
 
         private void LlenarCombos()
@@ -263,6 +269,8 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
             
 
             this.formato();
+
+            dataGridProductos.ClearSelection();
         }
 
         private void formato()
@@ -284,5 +292,7 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
 
 
         }
+
+        
     }
 }

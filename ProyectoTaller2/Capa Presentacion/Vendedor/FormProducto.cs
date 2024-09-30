@@ -89,12 +89,12 @@ namespace ProyectoTaller2
             if(dataGridView1.SelectedRows.Count > 0)
             {
                 //habilita los botones si hay al menos una fila selected
-                btnAgregarCarrito.Visible = true;
+              //  btnAgregarCarrito.Visible = true;
 
             }
             else
             {
-                btnAgregarCarrito.Visible=false;
+              //  btnAgregarCarrito.Visible=false;
             }
         }
 

@@ -173,6 +173,18 @@
     <Compile Include="Capa Presentacion\Vendedor\FormVentasRegistradas.Designer.cs">
       <DependentUpon>FormVentasRegistradas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Capa Presentacion\Vendedor\Form_ListaClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\Vendedor\Form_ListaClientes.Designer.cs">
+      <DependentUpon>Form_ListaClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Capa Presentacion\Vendedor\Form_ListaProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Capa Presentacion\Vendedor\Form_ListaProductos.Designer.cs">
+      <DependentUpon>Form_ListaProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Capa Presentacion\Vendedor\Form_Vendedor.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +307,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\Vendedor\FormVentasRegistradas.resx">
       <DependentUpon>FormVentasRegistradas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\Vendedor\Form_ListaClientes.resx">
+      <DependentUpon>Form_ListaClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Capa Presentacion\Vendedor\Form_ListaProductos.resx">
+      <DependentUpon>Form_ListaProductos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Capa Presentacion\Vendedor\Form_Vendedor.resx">
       <DependentUpon>Form_Vendedor.cs</DependentUpon>

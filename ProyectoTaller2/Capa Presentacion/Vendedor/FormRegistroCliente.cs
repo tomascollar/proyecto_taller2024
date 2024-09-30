@@ -51,7 +51,7 @@ namespace ProyectoTaller2.CapaPresentacion.SuperAdmin
         {
             bool valida = Validar.soloLetras(e);
             if (!valida)
-                errorP.SetError(txtNombre, "Solo numeros");
+                errorP.SetError(txtNombre, "Solo letras");
             else
                 errorP.Clear();
         }
@@ -60,7 +60,7 @@ namespace ProyectoTaller2.CapaPresentacion.SuperAdmin
         {
             bool valida = Validar.soloLetras(e);
             if (!valida)
-                errorP.SetError(txtApellido, "Solo numeros");
+                errorP.SetError(txtApellido, "Solo letras");
             else
                 errorP.Clear();
         }

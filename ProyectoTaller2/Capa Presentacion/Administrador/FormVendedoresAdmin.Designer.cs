@@ -89,6 +89,7 @@
             this.txtNombreVendedor.Name = "txtNombreVendedor";
             this.txtNombreVendedor.Size = new System.Drawing.Size(163, 26);
             this.txtNombreVendedor.TabIndex = 3;
+            this.txtNombreVendedor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombreVendedor_KeyPress);
             // 
             // btnBuscar
             // 
