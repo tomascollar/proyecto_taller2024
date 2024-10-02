@@ -221,7 +221,8 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
             LlenarCombos();
             cargarProductos();
 
-          
+            dataGridProductos.ClearSelection();
+            
         }
 
         private void LlenarCombos()
@@ -271,6 +272,7 @@ namespace ProyectoTaller2.Capa_Presentacion.Administrador
             this.formato();
 
             dataGridProductos.ClearSelection();
+      
         }
 
         private void formato()
